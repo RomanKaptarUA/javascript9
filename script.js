@@ -29,3 +29,19 @@ for ( let i = 0; i < words.length; i++){
 }
 
 console.log(findLongestWord('The quick brown fox jumped over the lazy dog'));
+
+// 4 
+const formatString = function (string) {
+    if (string.length <= 40){
+        return string;
+    } else {
+        return string.slice(0, 40) + '...'
+    }
+}
+console.log(formatString);
+// 5
+const checkforSpam = function (message) {
+    const lowerCase = message.toLowerCase();
+    return lowerCase.includes('span') || lowerCase.includes('sale');
+}
+
